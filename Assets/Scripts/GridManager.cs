@@ -1,4 +1,9 @@
-﻿using System.Collections;
+﻿/**
+    Author: Ashutosh Rautela
+    Date: 29 October 2019
+ */
+
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -68,68 +73,3 @@ public class GridManager : MonoBehaviour
         get {return this.tileBounds;}
     }
 }
-
-    /*
-    private void arrangeTiles()
-    {
-        int max = (int)(this.gridBounds.x / (this.tileBounds.x + this.tileBounds.x / 2));
-
-        for (int k = 0; k < rows; k++)
-        {
-            // HexRow newRow = new HexRow();
-            for (int i = k % 2 == 0 ? 0 : 1; i < max; i++)
-            {
-                if (k == 0 || k == 1) {
-                    HexColumnSet newColumn = new HexColumnSet();
-                    this.hexColumns.Add(newColumn);
-                }
-
-                GameObject fTile = Instantiate(tilePrefab, Vector2.zero, Quaternion.identity);
-                fTile.transform.SetParent(this.transform, false);
-                HexNode hexNode = fTile.GetComponent<HexNode>();
-
-                Vector2 position = new Vector2(-this.gridBounds.x / 2 + this.tileBounds.x / 2 + (i * this.tileBounds.x), -this.gridBounds.y / 2 + this.tileBounds.y / 2 + (k * this.tileBounds.y / 2));
-                position.x += (i * this.tileBounds.x / 2);
-                if (k%2 == 0) {
-                    hexNode.nodeIndex.Set(k , i);
-                    position.x += this.tileBounds.x / 2;
-                } else {
-                    hexNode.nodeIndex.Set(k , i - 1);
-                    position.x -= this.tileBounds.x / 4;
-                }
-                fTile.transform.localPosition = position;
-
-                // newRow.items.Add(hexNode);
-                this.hexColumns[i].items.Add(hexNode);
-            }
-            // this.hexRows.Add(newRow);
-        }
-    }
-
-    public static GridManager Instance
-    {
-        get { return GridManager.instance; }
-    }
-}
-
-[System.Serializable]
-public class HexRow {
-
-    public List<HexNode> items;
-
-    public HexRow() {
-        this.items = new List<HexNode>();
-    }
-}
-
-[System.Serializable]
-public class HexColumnSet {
-
-    public List<HexNode> items;
-
-    public HexColumnSet() {
-        this.items = new List<HexNode>();
-    }
-}
-*/
-

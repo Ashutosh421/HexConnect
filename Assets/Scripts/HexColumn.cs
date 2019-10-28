@@ -1,4 +1,9 @@
-﻿using System.Collections;
+﻿/**
+    Author: Ashutosh Rautela
+    Date: 29 October 2019
+ */
+
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using System.Linq;
@@ -7,10 +12,6 @@ public class HexColumn : MonoBehaviour
 {
 
     public GameObject tilePrefab;
-
-    public List<HexNode> hexNodes;
-    
-    [SerializeField]
     public LinkedList<HexNode> hexNodesLinkedList;
 
     private Vector2 tileBounds;
