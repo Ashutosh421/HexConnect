@@ -63,7 +63,7 @@ public class MovementTracker : MonoBehaviour
             IEnumerator it = GridManager.Instance.hexColumns[i].hexNodesLinkedList.GetEnumerator();
             while(it.MoveNext()) {
                 newNodes = (it.Current as HexNode).GetConnectedChain();
-                if (newNodes.Count > 3) {
+                if (newNodes.Count >= 3) {
                     this.HighlightNodes(newNodes);
                     return;
                 }
