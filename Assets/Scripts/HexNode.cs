@@ -226,7 +226,6 @@ public class HexNode : MonoBehaviour, IPointerDownHandler, IPointerEnterHandler,
         {
             connectedNodes.ForEach(delegate (HexNode cNode)
             {
-                cNode.GetComponent<Image>().color = Color.black;
                 if (!cNode.isVisited)
                 {
                     FindChainFrom(chain, cNode);

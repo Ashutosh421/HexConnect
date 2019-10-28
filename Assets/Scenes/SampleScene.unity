@@ -778,7 +778,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 80}
+  m_AnchoredPosition: {x: 111, y: 80}
   m_SizeDelta: {x: 658.80005, y: 982}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2135397042
@@ -829,8 +829,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 02786e52212234a2a9795b2e8b78ce12, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rows: 10
-  columns: 9
+  rows: 7
+  columns: 6
   tilePrefab: {fileID: 2864166432962944578, guid: d6bda987729cb4668bf4d23792b190bc,
     type: 3}
   hexColumnPrefab: {fileID: 6843149895021319412, guid: 6774278476d644568801c30d07d6ee6f,
